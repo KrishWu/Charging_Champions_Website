@@ -110,7 +110,9 @@ function ContactUs() {
           <h5 className="text-2xl text-white">
             email: <a className="text-blue-400 underline" href="mailto:charging.champions@gmail.com">charging.champions@gmail.com</a>
           </h5>
-          <h5 className="text-2xl text-white">instagram: @charging.champions</h5>
+          <h5 className="text-2xl text-white">
+            instagram: <a className="text-blue-400 underline" href="https://www.instagram.com/chargingchampions6560/">@chargingchampions6560</a>
+          </h5>
         </h3>
         <h5 className="text-sm text-white text-center">Made with ❤️ by Krish Wu</h5>
       </div>
