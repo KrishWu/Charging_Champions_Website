@@ -6,14 +6,14 @@ import firstCompetition from './img/firstCompetition.jpeg';
 import students from './img/students.jpg';
 import mentors from './img/mentors.jpeg';
 
-function NavBar() {
+const NavBar = () => {
   return (
-    <header className="flex flex-grow items-center border-b-4 p-6 border-gray-400 sticky top-0 bg-black w-full">
+    <header className="flex items-center border-b-4 p-4 lg:p-6 border-gray-400 sticky top-0 bg-black w-full z-50">
       <a className="pr-5" href="https://charging-champions.web.app" id="logo">
-        <img className="w-20 h-20 rounded-md flex" src="https://i.imgur.com/AkKEJZ1.png" alt="Charging Champion's Logo"/>
+        <img className="w-14 h-14 lg:w-20 lg:h-20 rounded-md" src="https://i.imgur.com/AkKEJZ1.png" alt="Charging Champion's Logo"/>
       </a>
-      <div className="flex justify-around w-full items-center">
-        <h1 className="text-blue-500 text-5xl text-center" id="title">Charging Champions</h1>
+      <h1 className="text-blue-500 text-2xl lg:text-5xl text-center m-auto lg:pl-10" id="title">Charging Champions</h1>
+      <div className="lg:flex justify-around items-center hidden w-3/5 m-auto text-xl">
         <a className="text-white" href="#About" id="aboutHeader">About Us</a>
         <a className="text-white" href="#First" id="firstHeader">First</a>
         <a className="text-white" href="#Students" id="studentsHeader">Students</a>
@@ -25,72 +25,72 @@ function NavBar() {
   )
 }
 
-function Bio() {
+const Bio = () => {
   return (
-    <div>
-      <span className="block h-28 mt-28 invisible" id="About"></span>
-      <div className="flex flex-row p-16 flex-wrap w-full border-b-4 border-gray-400">
-        <h3 className="text-blue-500 text-3xl w-2/5 text-left m-10">
+    <div className="relative">
+      <div className="absolute floatyThingy" id="About"></div>
+      <div className="p-4 lg:p-16 flex flex-col-reverse lg:flex-row justify-around border-b-4 border-gray-400">
+        <h3 className="text-blue-500 text-xl lg:text-3xl lg:w-2/5 text-left m-2 lg:m-10">
           Charging Champions Team is the best FRC Robotics Team!
-          <h5 className="text-2xl text-white">We are FTC team #8660 and FRC team #6560</h5>
+          <h5 className="text-base lg:text-2xl text-white">We are FTC team #8660 and FRC team #6560</h5>
         </h3>
-        <img className="w-2/5 rounded-3xl m-auto" src="https://i.imgur.com/ArqgbAB.jpeg" alt="Chargine Champion's Team"/>
+        <img className="lg:w-2/5 rounded-3xl" src="https://i.imgur.com/ArqgbAB.jpeg" alt="Chargine Champion's Team"/>
       </div>
     </div>
   )
 }
 
-function First() {
+const First = () => {
   return (
-    <div>
-      <span className="block h-28 mt-28 invisible" id="First"></span>
-      <div className="p-16 flex flex-row justify-around border-b-4 border-gray-400">
-        <img className="w-2/6 h-auto rounded-3xl" src={firstCompetition} alt="Solid Works logo." />
-        <h3 className="text-blue-500 text-3xl w-2/5 text-left m-10">
+    <div className="relative">
+      <div className="absolute floatyThingy" id="First"></div>
+      <div className="p-4 lg:p-16 flex flex-col lg:flex-row justify-around border-b-4 border-gray-400">
+        <img className="lg:w-2/5 rounded-3xl" src={firstCompetition} alt="Solid Works logo." />
+        <h3 className="text-blue-500 text-xl lg:text-3xl lg:w-2/5 text-left m-2 lg:m-10">
           What is First?
-          <h5 className="text-2xl text-white">FIRST, which means “For Inspiration and Recognition of Science and Technology,” has high-schooler in teams design, program, and build a robot starting with a standard kit of parts and common set of rules to play in a themed head-to-head challenge. Teams also build a brand, develop community partnerships for support, and work to promote STEM in their local community.</h5>
+          <h5 className="text-base lg:text-2xl text-white">FIRST, which means “For Inspiration and Recognition of Science and Technology,” has high-schooler in teams design, program, and build a robot starting with a standard kit of parts and common set of rules to play in a themed head-to-head challenge. Teams also build a brand, develop community partnerships for support, and work to promote STEM in their local community.</h5>
         </h3>
       </div>
     </div>
   )
 }
 
-function Students() {
+const Students = () => {
   return (
-    <div>
-      <span className="block h-28 mt-28 invisible" id="Students"></span>
-      <div className="p-16 flex flex-row justify-around border-b-4 border-gray-400">
-        <h3 className="text-blue-500 text-3xl w-2/5 text-left m-10">
+    <div className="relative">
+      <div className="absolute floatyThingy" id="Students"></div>
+      <div className="p-4 lg:p-16 flex flex-col-reverse lg:flex-row justify-around border-b-4 border-gray-400">
+        <h3 className="text-blue-500 text-xl lg:text-3xl lg:w-2/5 text-left m-2 lg:m-10">
           Who are the students?
-          <h5 className="text-2xl text-white">High school students from all around Irvine, CA (especially University High School) participate on FRC team 6560 and each year create a globally competitive robot with the support of industry and FIRST professional mentors.</h5>
+          <h5 className="text-base lg:text-2xl text-white">High school students from all around Irvine, CA (especially University High School) participate on FRC team 6560 and each year create a globally competitive robot with the support of industry and FIRST professional mentors.</h5>
         </h3>
-        <img className="w-2/6 h-auto rounded-3xl" src={students} alt="Solid Works logo." />
+        <img className="lg:w-2/5 rounded-3xl" src={students} alt="Solid Works logo." />
       </div>
     </div>
   )
 }
 
-function Mentors() {
+const Mentors = () => {
   return (
-    <div>
-      <span className="block h-28 mt-28 invisible" id="Mentors"></span>
-      <div className="p-16 flex flex-row justify-around border-b-4 border-gray-400">
-        <img className="w-2/6 h-auto rounded-3xl" src={mentors} alt="Solid Works logo." />
-        <h3 className="text-blue-500 text-3xl w-2/5 text-left m-10">
+    <div className="relative">
+      <div className="absolute floatyThingy" id="Mentors"></div>
+      <div className="p-4 lg:p-16 flex flex-col lg:flex-row justify-around border-b-4 border-gray-400">
+        <img className="lg:w-2/5 rounded-3xl" src={mentors} alt="Solid Works logo." />
+        <h3 className="text-blue-500 text-xl lg:text-3xl lg:w-2/5 text-left m-2 lg:m-10">
           Who are the mentors?
-          <h5 className="text-2xl text-white">Industry professionals and FIRST alumni inspire students and pass their knowledge on to the team to foster a team that grows in competitiveness.</h5>
+          <h5 className="text-base lg:text-2xl text-white">Industry professionals and FIRST alumni inspire students and pass their knowledge on to the team to foster a team that grows in competitiveness.</h5>
         </h3>
       </div>
     </div>
   )
 }
 
-function Sponsors() {
+const Sponsors = () => {
   return (
-    <div>
-      <span className="block h-28 mt-28 invisible" id="Sponsors"></span>
-      <div className="p-16 border-b-4 border-gray-400">
-        <h3 className="text-center text-blue-500 text-5xl pb-16">Our Sponsors</h3>
+    <div className="relative">
+      <div className="absolute floatyThingy" id="Sponsors"></div>
+      <div className="p-4 lg:p-16 border-b-4 border-gray-400">
+        <h3 className="text-center text-blue-500 text-5xl pb-4 lg:pb-16">Our Sponsors</h3>
         <div className="flex flex-row justify-around">
           <img className="w-1/6 h-1/5" src={apple} alt="Apple logo." />
           <img className="w-2/6 h-auto" src={solidWorks} alt="Solid Works logo." />
@@ -100,17 +100,17 @@ function Sponsors() {
   )
 }
 
-function ContactUs() {
+const ContactUs = () => {
   return (
-    <div>
-      <span className="block h-28 mt-28 invisible" id="Contacts"></span>
+    <div className="relative">
+    <div className="absolute floatyThingy" id="Contacts"></div>
       <div className="p-5 bg-gray-800">
-        <h3 className="text-blue-500 text-3xl w-2/5 text-left m-10">
+        <h3 className="text-blue-500 text-xl lg:text-3xl w-2/5 text-left m-10">
           Contact Us
-          <h5 className="text-2xl text-white">
+          <h5 className="text-base lg:text-2xl text-white">
             email: <a className="text-blue-400 underline" href="mailto:charging.champions@gmail.com">charging.champions@gmail.com</a>
           </h5>
-          <h5 className="text-2xl text-white">
+          <h5 className="text-base lg:text-2xl text-white">
             instagram: <a className="text-blue-400 underline" href="https://www.instagram.com/chargingchampions6560/">@chargingchampions6560</a>
           </h5>
         </h3>
@@ -120,7 +120,7 @@ function ContactUs() {
   )
 }
 
-function App() {
+const App = () => {
   return (
     <div className="min-h-full min-w-full text-center bg-black">
       <NavBar />
