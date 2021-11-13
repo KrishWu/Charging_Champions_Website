@@ -1,5 +1,6 @@
 import './App.css';
 import heroImg from './img/heroImage.jpg';
+import heroImgMobile from './img/heroImageMobile.jpg';
 import apple from './img/apple.png';
 import solidWorks from './img/solidWorks.png';
 import firstCompetition from './img/firstCompetition.jpeg';
@@ -8,11 +9,11 @@ import mentors from './img/mentors.jpeg';
 
 const NavBar = () => {
   return (
-    <header className="flex items-center border-b-4 p-4 lg:p-6 border-gray-400 sticky top-0 bg-black w-full z-50">
-      <a className="pr-5" href="https://charging-champions.web.app" id="logo">
+    <header className="flex items-center border-b-4 pt-4 pb-4 pl-4 lg:p-6 border-gray-400 sticky top-0 bg-black w-full z-50">
+      <a className="" href="https://charging-champions.web.app" id="logo">
         <img className="w-14 h-14 lg:w-20 lg:h-20 rounded-md" src="https://i.imgur.com/AkKEJZ1.png" alt="Charging Champion's Logo"/>
       </a>
-      <h1 className="text-blue-500 text-2xl lg:text-5xl text-center m-auto lg:pl-10" id="title">Charging Champions</h1>
+      <h1 className="text-blue-500 text-3xl lg:text-5xl text-center m-auto lg:pl-10" id="title">Charging Champions</h1>
       <div className="lg:flex justify-around items-center hidden w-3/5 m-auto text-xl">
         <a className="text-white" href="#About" id="aboutHeader">About Us</a>
         <a className="text-white" href="#First" id="firstHeader">First</a>
@@ -90,7 +91,7 @@ const Sponsors = () => {
     <div className="relative">
       <div className="absolute floatyThingy" id="Sponsors"></div>
       <div className="p-4 lg:p-16 border-b-4 border-gray-400">
-        <h3 className="text-center text-blue-500 text-5xl pb-4 lg:pb-16">Our Sponsors</h3>
+        <h3 className="text-center text-blue-500 text-4xl lg:text-5xl pb-4 lg:pb-16">Our Sponsors</h3>
         <div className="flex flex-row justify-around">
           <img className="w-1/6 h-1/5" src={apple} alt="Apple logo." />
           <img className="w-2/6 h-auto" src={solidWorks} alt="Solid Works logo." />
@@ -125,7 +126,8 @@ const App = () => {
     <div className="min-h-full min-w-full text-center bg-black">
       <NavBar />
       <body>
-        <img className="m-auto w-full" src={heroImg} alt="Charging Champions Hero" />
+        <img className="m-auto w-full hidden lg:inline" src={heroImg} alt="Charging Champions Hero" />
+        <img className="m-auto w-full lg:hidden" src={heroImgMobile} alt="Charging Champions Hero" />
         <Bio />
         <First />
         <Students />
