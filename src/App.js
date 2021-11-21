@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import heroImg from './img/heroImage.jpg';
 import heroImgMobile from './img/heroImageMobile.jpg';
@@ -7,10 +8,12 @@ import firstCompetition from './img/firstCompetition.jpeg';
 import students from './img/students.jpg';
 import mentors from './img/mentors.jpeg';
 
+import { motion } from 'framer-motion';
+
 const NavBar = () => {
   return (
     <header className="flex items-center border-b-4 pt-4 pb-4 pl-4 lg:p-6 border-gray-400 sticky top-0 bg-black w-full z-50">
-      <a className="" href="https://charging-champions.web.app" id="logo">
+      <a className="" href="https://chargingchampions.org" id="logo">
         <img className="w-14 h-14 lg:w-20 lg:h-20 rounded-md" src="https://i.imgur.com/AkKEJZ1.png" alt="Charging Champion's Logo"/>
       </a>
       <h1 className="text-blue-500 text-3xl lg:text-5xl text-center m-auto lg:pl-10" id="title">Charging Champions</h1>
@@ -115,7 +118,7 @@ const ContactUs = () => {
             instagram: <a className="text-blue-400 underline" href="https://www.instagram.com/chargingchampions6560/">@chargingchampions6560</a>
           </h5>
         </h3>
-        <h5 className="text-sm text-white text-center">Made with ❤️ by Krish Wu</h5>
+        <h5 className="text-sm text-white text-center">Made with <span role="img" aria-label="heart emoji">❤️</span> by Krish Wu</h5>
       </div>
     </div>
   )
