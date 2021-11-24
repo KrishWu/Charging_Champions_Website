@@ -7,8 +7,12 @@ import solidWorks from './img/solidWorks.png';
 import firstCompetition from './img/firstCompetition.jpeg';
 import students from './img/students.jpg';
 import mentors from './img/mentors.jpeg';
+import instagramBlue from './img/instagramBlue.png';
+import instagram  from './img/instagram.png';
+import facebook from './img/facebook.png';
+import youtube from './img/youtube.png';
 
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 
 const NavBar = () => {
   return (
@@ -24,6 +28,9 @@ const NavBar = () => {
         <a className="text-white" href="#Mentors" id="mentorsHeader">Mentors</a>
         <a className="text-white" href="#Sponsors" id="sponsorsHeader">Sponsors</a>
         <a className="text-white" href="#Contacts" id="contactsHeader">Contacts</a>
+        <a className="text-Blue-400 text-2xl" href="https://www.instagram.com/chargingchampions6560/">
+          <img className="h-10" src={instagramBlue} alt="Instagram Icon Blue" />
+        </a>
       </div>
     </header>
   )
@@ -109,7 +116,18 @@ const ContactUs = () => {
     <div className="relative">
     <div className="absolute floatyThingy" id="Contacts"></div>
       <div className="p-5 bg-gray-800">
-        <h3 className="text-blue-500 text-xl lg:text-3xl w-2/5 text-left m-10">
+        <div className="pt-10 pr-10 pl-10 flex flex-row m-auto justify-around w-1/5">
+          <a href="https://www.instagram.com/chargingchampions6560/">
+            <img className="h-10 m-auto" src={instagram} alt="Instagram Icon" />
+          </a>
+          <a href="https://www.facebook.com/chargingchampions/">
+            <img className="h-10 m-auto" src={facebook} alt="Facebook Icon" />
+          </a>
+          <a href="https://www.youtube.com/channel/UCopXKZO1IG3zsvQKCXF4ESQ">
+            <img className="h-10 m-auto" src={youtube} alt="Youtube Icon" />
+          </a>
+        </div>
+        <h3 className="text-blue-500 text-xl lg:text-3xl text-left p-10 m-auto inline-block">
           Contact Us
           <h5 className="text-base lg:text-2xl text-white">
             email: <a className="text-blue-400 underline" href="mailto:charging.champions@gmail.com">charging.champions@gmail.com</a>
