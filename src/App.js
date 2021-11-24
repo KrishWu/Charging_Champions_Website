@@ -116,7 +116,7 @@ const ContactUs = () => {
     <div className="relative">
     <div className="absolute floatyThingy" id="Contacts"></div>
       <div className="p-5 bg-gray-800">
-        <div className="pt-10 pr-10 pl-10 flex flex-row m-auto justify-around w-1/5">
+        <div className="pt-10 pr-10 pl-10 flex flex-row m-auto justify-around lg:w-1/5">
           <a href="https://www.instagram.com/chargingchampions6560/" target="_blank" rel="noopener noreferrer">
             <img className="h-10 m-auto" src={instagram} alt="Instagram Icon" />
           </a>
@@ -147,8 +147,8 @@ const App = () => {
     <div className="min-h-full min-w-full text-center bg-black">
       <NavBar />
       <body>
-        <img className="m-auto w-full hidden lg:inline" src={heroImg} alt="Charging Champions Hero" />
-        <img className="m-auto w-full lg:hidden" src={heroImgMobile} alt="Charging Champions Hero" />
+        <img className="m-auto w-full hidden h-hero lg:inline" src={heroImg} alt="Charging Champions Hero" />
+        <img className="m-auto w-full h-hero lg:hidden" src={heroImgMobile} alt="Charging Champions Hero" />
         <Bio />
         <First />
         <Students />
