@@ -28,7 +28,7 @@ const NavBar = () => {
         <a className="text-white" href="#Mentors" id="mentorsHeader">Mentors</a>
         <a className="text-white" href="#Sponsors" id="sponsorsHeader">Sponsors</a>
         <a className="text-white" href="#Contacts" id="contactsHeader">Contacts</a>
-        <a className="text-Blue-400 text-2xl" href="https://www.instagram.com/chargingchampions6560/">
+        <a className="text-Blue-400 text-2xl" href="https://www.instagram.com/chargingchampions6560/" target="_blank" rel="noopener noreferrer">
           <img className="h-10" src={instagramBlue} alt="Instagram Icon Blue" />
         </a>
       </div>
@@ -117,23 +117,23 @@ const ContactUs = () => {
     <div className="absolute floatyThingy" id="Contacts"></div>
       <div className="p-5 bg-gray-800">
         <div className="pt-10 pr-10 pl-10 flex flex-row m-auto justify-around w-1/5">
-          <a href="https://www.instagram.com/chargingchampions6560/">
+          <a href="https://www.instagram.com/chargingchampions6560/" target="_blank" rel="noopener noreferrer">
             <img className="h-10 m-auto" src={instagram} alt="Instagram Icon" />
           </a>
-          <a href="https://www.facebook.com/chargingchampions/">
+          <a href="https://www.facebook.com/chargingchampions/" target="_blank" rel="noopener noreferrer">
             <img className="h-10 m-auto" src={facebook} alt="Facebook Icon" />
           </a>
-          <a href="https://www.youtube.com/channel/UCopXKZO1IG3zsvQKCXF4ESQ">
+          <a href="https://www.youtube.com/channel/UCopXKZO1IG3zsvQKCXF4ESQ" target="_blank" rel="noopener noreferrer">
             <img className="h-10 m-auto" src={youtube} alt="Youtube Icon" />
           </a>
         </div>
         <h3 className="text-blue-500 text-xl lg:text-3xl text-left p-10 m-auto inline-block">
           Contact Us
           <h5 className="text-base lg:text-2xl text-white">
-            email: <a className="text-blue-400 underline" href="mailto:charging.champions@gmail.com">charging.champions@gmail.com</a>
+            email: <a className="text-blue-400 underline" href="mailto:charging.champions@gmail.com" target="_blank" rel="noopener noreferrer">charging.champions@gmail.com</a>
           </h5>
           <h5 className="text-base lg:text-2xl text-white">
-            instagram: <a className="text-blue-400 underline" href="https://www.instagram.com/chargingchampions6560/">@chargingchampions6560</a>
+            instagram: <a className="text-blue-400 underline" href="https://www.instagram.com/chargingchampions6560/" target="_blank" rel="noopener noreferrer">@chargingchampions6560</a>
           </h5>
         </h3>
         <h5 className="text-sm text-white text-center">Made with <span role="img" aria-label="heart emoji">❤️</span> by Krish Wu</h5>
