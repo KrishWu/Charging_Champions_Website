@@ -12,7 +12,7 @@ import instagram  from './img/instagram.png';
 import facebook from './img/facebook.png';
 import youtube from './img/youtube.png';
 
-// import { motion } from 'framer-motion';
+import Slide from './components/util/Slide';
 
 const NavBar = () => {
   return (
@@ -41,10 +41,14 @@ const Bio = () => {
     <div className="relative">
       <div className="absolute floatyThingy" id="About"></div>
       <div className="p-4 lg:p-16 flex flex-col-reverse lg:flex-row justify-around border-b-4 border-gray-400">
-        <h3 className="text-blue-500 text-xl lg:text-3xl lg:w-2/5 text-left m-2 lg:m-10">
-          Charging Champions Team is the best FRC Robotics Team!
-          <h5 className="text-base lg:text-2xl text-white">We are FTC team #8660 and FRC team #6560</h5>
-        </h3>
+        <div className="lg:w-2/5">
+          <Slide direction="left">
+            <h3 className="text-blue-500 text-xl lg:text-3xl text-left m-2 lg:m-10">
+              Charging Champions Team is the best FRC Robotics Team!
+              <h5 className="text-base lg:text-2xl text-white">We are FTC team #8660 and FRC team #6560</h5>
+            </h3>
+          </Slide>
+        </div>
         <img className="lg:w-2/5 rounded-3xl" src="https://i.imgur.com/ArqgbAB.jpeg" alt="Chargine Champion's Team"/>
       </div>
     </div>
@@ -57,10 +61,14 @@ const First = () => {
       <div className="absolute floatyThingy" id="First"></div>
       <div className="p-4 lg:p-16 flex flex-col lg:flex-row justify-around border-b-4 border-gray-400">
         <img className="lg:w-2/5 rounded-3xl" src={firstCompetition} alt="Solid Works logo." />
-        <h3 className="text-blue-500 text-xl lg:text-3xl lg:w-2/5 text-left m-2 lg:m-10">
-          What is First?
-          <h5 className="text-base lg:text-2xl text-white">FIRST, which means “For Inspiration and Recognition of Science and Technology,” has high-schooler in teams design, program, and build a robot starting with a standard kit of parts and common set of rules to play in a themed head-to-head challenge. Teams also build a brand, develop community partnerships for support, and work to promote STEM in their local community.</h5>
-        </h3>
+        <div className="lg:w-2/5">
+          <Slide direction="right">
+            <h3 className="text-blue-500 text-xl lg:text-3xl text-left m-2 lg:m-10">
+              What is First?
+              <h5 className="text-base lg:text-2xl text-white">FIRST, which means “For Inspiration and Recognition of Science and Technology,” has high-schooler in teams design, program, and build a robot starting with a standard kit of parts and common set of rules to play in a themed head-to-head challenge. Teams also build a brand, develop community partnerships for support, and work to promote STEM in their local community.</h5>
+            </h3>
+          </Slide>
+        </div>
       </div>
     </div>
   )
@@ -71,10 +79,14 @@ const Students = () => {
     <div className="relative">
       <div className="absolute floatyThingy" id="Students"></div>
       <div className="p-4 lg:p-16 flex flex-col-reverse lg:flex-row justify-around border-b-4 border-gray-400">
-        <h3 className="text-blue-500 text-xl lg:text-3xl lg:w-2/5 text-left m-2 lg:m-10">
-          Who are the students?
-          <h5 className="text-base lg:text-2xl text-white">High school students from all around Irvine, CA (especially University High School) participate on FRC team 6560 and each year create a globally competitive robot with the support of industry and FIRST professional mentors.</h5>
-        </h3>
+        <div className="lg:w-2/5">
+          <Slide direction="left">
+            <h3 className="text-blue-500 text-xl lg:text-3xl text-left m-2 lg:m-10">
+              Who are the students?
+              <h5 className="text-base lg:text-2xl text-white">High school students from all around Irvine, CA (especially University High School) participate on FRC team 6560 and each year create a globally competitive robot with the support of industry and FIRST professional mentors.</h5>
+            </h3>
+          </Slide>
+        </div>
         <img className="lg:w-2/5 rounded-3xl" src={students} alt="Solid Works logo." />
       </div>
     </div>
@@ -87,10 +99,14 @@ const Mentors = () => {
       <div className="absolute floatyThingy" id="Mentors"></div>
       <div className="p-4 lg:p-16 flex flex-col lg:flex-row justify-around border-b-4 border-gray-400">
         <img className="lg:w-2/5 rounded-3xl" src={mentors} alt="Solid Works logo." />
-        <h3 className="text-blue-500 text-xl lg:text-3xl lg:w-2/5 text-left m-2 lg:m-10">
-          Who are the mentors?
-          <h5 className="text-base lg:text-2xl text-white">Industry professionals and FIRST alumni inspire students and pass their knowledge on to the team to foster a team that grows in competitiveness.</h5>
-        </h3>
+        <div className="lg:w-2/5">
+          <Slide direction="right">
+            <h3 className="text-blue-500 text-xl lg:text-3xl text-left m-2 lg:m-10">
+              Who are the mentors?
+              <h5 className="text-base lg:text-2xl text-white">Industry professionals and FIRST alumni inspire students and pass their knowledge on to the team to foster a team that grows in competitiveness.</h5>
+            </h3>
+          </Slide>
+        </div>
       </div>
     </div>
   )
