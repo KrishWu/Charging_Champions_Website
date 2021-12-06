@@ -21,7 +21,13 @@ const NavBar = () => {
       <a className="" href="https://chargingchampions.org" id="logo">
         <img className="h-14 lg:h-20 rounded-md m-auto lg:pl-10" src={logo} alt="Charging Champion's Logo"/>
       </a>
-      <h1 className="text-blue-500 text-3xl lg:text-5xl text-center m-auto lg:pl-5" id="title">Charging Champions</h1>
+      <h1 className="text-blue-500 text-3xl lg:text-5xl text-center m-auto lg:pl-5" id="title">
+        Cha
+        <a className="" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">
+          r
+        </a>
+        ging Champions
+      </h1>
       <div className="lg:flex justify-around items-center hidden w-3/5 m-auto text-xl">
         <a className="text-white" href="#About" id="aboutHeader">About Us</a>
         <a className="text-white" href="#First" id="firstHeader">First</a>
@@ -161,7 +167,7 @@ const ContactUs = () => {
 
 const App = () => {
   return (
-    <div className="min-h-full min-w-full text-center bg-black">
+    <div className="min-h-full max-w-full text-center bg-black overflow-x-hidden">
       <NavBar />
       <body>
         <img className="m-auto w-full hidden h-hero lg:inline" src={heroImg} alt="Charging Champions Hero" />
