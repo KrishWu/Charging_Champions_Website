@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import heroImg from './img/heroImage.jpg';
-import heroImgMobile from './img/heroImageMobile.jpg';
+import heroImg from './img/heroImage.png';
+import heroImgMobile from './img/heroImageMobile.png';
 import apple from './img/apple.png';
 import solidWorks from './img/solidWorks.png';
 import firstCompetition from './img/firstCompetition.jpeg';
@@ -11,6 +11,7 @@ import instagramBlue from './img/instagramBlue.png';
 import instagram  from './img/instagram.png';
 import facebook from './img/facebook.png';
 import youtube from './img/youtube.png';
+import logo from './img/logo.png';
 
 import Slide from './components/util/Slide';
 
@@ -18,9 +19,9 @@ const NavBar = () => {
   return (
     <header className="flex items-center border-b-4 pt-4 pb-4 pl-4 lg:p-6 border-gray-400 sticky top-0 bg-black w-full z-50">
       <a className="" href="https://chargingchampions.org" id="logo">
-        <img className="w-14 h-14 lg:w-20 lg:h-20 rounded-md" src="https://i.imgur.com/AkKEJZ1.png" alt="Charging Champion's Logo"/>
+        <img className="h-14 lg:h-20 rounded-md m-auto lg:pl-10" src={logo} alt="Charging Champion's Logo"/>
       </a>
-      <h1 className="text-blue-500 text-3xl lg:text-5xl text-center m-auto lg:pl-10" id="title">Charging Champions</h1>
+      <h1 className="text-blue-500 text-3xl lg:text-5xl text-center m-auto lg:pl-5" id="title">Charging Champions</h1>
       <div className="lg:flex justify-around items-center hidden w-3/5 m-auto text-xl">
         <a className="text-white" href="#About" id="aboutHeader">About Us</a>
         <a className="text-white" href="#First" id="firstHeader">First</a>
