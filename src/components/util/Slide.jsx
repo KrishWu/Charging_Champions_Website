@@ -10,7 +10,7 @@ const Slide = ({children, direction}) => {
     animationControl.start({
       x: 0,
       transition: {
-        delay: 0.7,
+        delay: 0.3,
       }
     });
   }
