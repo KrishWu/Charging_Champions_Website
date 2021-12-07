@@ -178,7 +178,7 @@ const App = () => {
     <div className="min-h-full max-w-full text-center bg-black overflow-x-hidden">
       <NavBar />
       <body>
-        <div className="h-20lg:h-28"></div>
+        <div className="h-20 lg:h-28"></div>
         <img className="m-auto w-full hidden h-hero lg:inline" src={heroImg} alt="Charging Champions Hero" />
         <img className="m-auto w-full h-hero lg:hidden" src={heroImgMobile} alt="Charging Champions Hero" />
         <Bio />
