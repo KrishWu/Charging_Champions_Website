@@ -12,12 +12,14 @@ import instagram  from './img/instagram.png';
 import facebook from './img/facebook.png';
 import youtube from './img/youtube.png';
 import logo from './img/logo.png';
+import google from './img/google.png'
+import johnsonAndJohnson from './img/johnsonAndJohnson.png'
 
 import Slide from './components/util/Slide';
 
 const NavBar = () => {
   return (
-    <header className="flex items-center border-b-4 pt-4 pb-4 pl-4 lg:p-6 border-gray-400 sticky top-0 bg-black w-full z-50">
+    <header className="flex items-center border-b-4 pt-4 pb-4 pl-4 lg:p-6 border-gray-400 fixed top-0 bg-black w-full z-50">
       <a className="" href="https://chargingchampions.org" id="logo">
         <img className="h-14 lg:h-20 rounded-md m-auto lg:pl-10" src={logo} alt="Charging Champion's Logo"/>
       </a>
@@ -125,9 +127,15 @@ const Sponsors = () => {
       <div className="absolute floatyThingy" id="Sponsors"></div>
       <div className="p-4 lg:p-16 border-b-4 border-gray-400">
         <h3 className="text-center text-blue-500 text-4xl lg:text-5xl pb-4 lg:pb-16">Our Sponsors</h3>
-        <div className="flex flex-row justify-around">
-          <img className="w-1/6 h-1/5" src={apple} alt="Apple logo." />
-          <img className="w-2/6 h-auto" src={solidWorks} alt="Solid Works logo." />
+        <div className="flex flex-col lg:flex-row">
+          <div className="flex flex-row justify-around lg:w-2/5 mt-auto mb-auto p-5 lg:p-0">
+            <img className="w-1/5 mt-auto mb-auto" src={apple} alt="Apple logo." />
+            <img className="w-2/5 h-auto mt-auto mb-auto" src={solidWorks} alt="Solid Works logo." />
+          </div>
+          <div className="flex flew-row justify-around lg:w-3/5 mt-auto mb-auto p-5 lg:p-0">
+            <img className="w-1/4 lg:h-4/5 mt-auto mb-auto" src={google} alt="Google logo." />
+            <img className="w-1/2 h-auto mt-auto mb-auto" src={johnsonAndJohnson} alt="Johnson and Johnson logo." />
+          </div>
         </div>
       </div>
     </div>
@@ -170,6 +178,7 @@ const App = () => {
     <div className="min-h-full max-w-full text-center bg-black overflow-x-hidden">
       <NavBar />
       <body>
+        <div className="h-20lg:h-28"></div>
         <img className="m-auto w-full hidden h-hero lg:inline" src={heroImg} alt="Charging Champions Hero" />
         <img className="m-auto w-full h-hero lg:hidden" src={heroImgMobile} alt="Charging Champions Hero" />
         <Bio />
