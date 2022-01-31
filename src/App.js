@@ -179,8 +179,8 @@ const App = () => {
       <NavBar />
       <body>
         <div className="h-20 lg:h-28"></div>
-        <img className="m-auto w-full hidden h-hero lg:inline" src={heroImg} alt="Charging Champions Hero" />
-        <img className="m-auto w-full h-hero lg:hidden" src={heroImgMobile} alt="Charging Champions Hero" />
+        <img className="m-auto w-full hidden lg:inline" src={heroImg} alt="Charging Champions Hero" />
+        <img className="m-auto w-full lg:hidden" src={heroImgMobile} alt="Charging Champions Hero" />
         <Bio />
         <First />
         <Students />
@@ -188,6 +188,7 @@ const App = () => {
         <Sponsors />
         <ContactUs />
       </body>
+      <script src="https://cdn.tailwindcss.com"></script>
     </div>
   );
 }
