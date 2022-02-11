@@ -32,7 +32,7 @@ const NavBar = () => {
       <a className="" href="https://chargingchampions.org" id="logo">
         <img className="h-14 lg:h-20 rounded-md m-auto lg:pl-10" src={logo} alt="Charging Champion's Logo"/>
       </a>
-      <h1 className="text-blue-500 text-2xl lg:text-5xl text-center m-auto lg:pl-5" id="title">
+      <h1 className="text-blue-500 text-3xl lg:text-5xl text-center m-auto lg:pl-5" id="title">
         Cha
         <a className="" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">
           r
@@ -40,17 +40,17 @@ const NavBar = () => {
         ging Champions
       </h1>
       <div className={"bg-black fixed top-0 left-0 h-screen w-screen flex-col lg:flex-row lg:static flex justify-around items-center lg:w-3/5 lg:h-auto m-auto text-xl mask " + clicked}>
-        <a className="text-white hover:text-blue-500" href="#About" id="aboutHeader">About Us</a>
-        <a className="text-white hover:text-blue-500" href="#First" id="firstHeader">First</a>
-        <a className="text-white hover:text-blue-500" href="#Students" id="studentsHeader">Students</a>
-        <a className="text-white hover:text-blue-500" href="#Mentors" id="mentorsHeader">Mentors</a>
-        <a className="text-white hover:text-blue-500" href="#Sponsors" id="sponsorsHeader">Sponsors</a>
-        <a className="text-white hover:text-blue-500" href="#Contacts" id="contactsHeader">Contacts</a>
+        <a className="text-white hover:text-blue-500" href="#About" id="aboutHeader" onClick={toggleClicked}>About Us</a>
+        <a className="text-white hover:text-blue-500" href="#First" id="firstHeader" onClick={toggleClicked}>First</a>
+        <a className="text-white hover:text-blue-500" href="#Students" id="studentsHeader" onClick={toggleClicked}>Students</a>
+        <a className="text-white hover:text-blue-500" href="#Mentors" id="mentorsHeader" onClick={toggleClicked}>Mentors</a>
+        <a className="text-white hover:text-blue-500" href="#Sponsors" id="sponsorsHeader" onClick={toggleClicked}>Sponsors</a>
+        <a className="text-white hover:text-blue-500" href="#Contacts" id="contactsHeader" onClick={toggleClicked}>Contacts</a>
         <a className="text-Blue-400 text-2xl" href="https://www.instagram.com/chargingchampions6560/" target="_blank" rel="noopener noreferrer">
           <img className="h-10" src={instagramBlue} alt="Instagram Icon Blue" />
         </a>
       </div>
-      <div className="cursor-pointer pr-10" onClick={toggleClicked}>
+      <div className="cursor-pointer pr-2 lg:hidden" onClick={toggleClicked}>
         <div className="w-7 h-1 bg-white m-1 relative"></div>
         <div className="w-7 h-1 bg-white m-1 relative"></div>
         <div className="w-7 h-1 bg-white m-1 relative"></div>
