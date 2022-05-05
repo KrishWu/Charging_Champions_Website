@@ -193,8 +193,10 @@ const App = () => {
       <NavBar />
       <body>
         <div className="h-20 lg:h-28"></div>
-        <img className="m-auto w-full hidden lg:inline" src={heroImg} alt="Charging Champions Hero" />
-        <img className="m-auto w-full lg:hidden" src={heroImgMobile} alt="Charging Champions Hero" />
+        <div className="min-h-screen">
+          <img className="m-auto w-full hidden lg:inline" src={heroImg} alt="Charging Champions Hero" />
+          <img className="m-auto w-full lg:hidden" src={heroImgMobile} alt="Charging Champions Hero" />
+        </div>
         <Bio />
         <First />
         <Students />
