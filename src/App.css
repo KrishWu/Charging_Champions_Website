@@ -30,3 +30,7 @@ html,
     pointer-events: all;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
