@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import './App.css';
-import heroImgLight from './img/heroImageLight.png';
-import heroImgMobileLight from './img/heroImageMobileLight.png';
-import heroImgDark from './img/heroImageDark.png';
-import heroImgMobileDark from './img/heroImageMobileDark.png';
+import heroImgLight from './img/heroImageLight.jpg';
+import heroImgMobileLight from './img/heroImageMobileLight.jpg';
+import heroImgDark from './img/heroImageDark.jpg';
+import heroImgMobileDark from './img/heroImageMobileDark.jpg';
 import apple from './img/apple.png';
 import solidWorks from './img/solidWorks.png';
 import firstCompetition from './img/firstCompetition.jpeg';
