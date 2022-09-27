@@ -242,7 +242,7 @@ const App = () => {
           <div className="h-20 lg:h-28"></div>
           <div className="min-h-screen">
             <div className=" dark:hidden">
-              <img className="m-auto w-full  hidden lg:inline" src={heroImgLight} alt="Charging Champions Hero" />
+              <img className="m-auto w-ful  hidden lg:inline" src={heroImgLight} alt="Charging Champions Hero" />
               <img className="m-auto w-full lg:hidden" src={heroImgMobileLight} alt="Charging Champions Hero" />
             </div>
             <div className="hidden dark:inline">
